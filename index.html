@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fika Store Menu</title>
+    <title>Handi Store Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <header>
+        <h1>Handi Store</h1>
+        <p>Hosting & Jasa Digital Murah dan Terpercaya</p>
+    </header>
+
+    <section class="intro">
+        <img src="logo.png" alt="Fika AI Logo">
+        <p><strong><i class="fas fa-robot"></i>       Hai, aku adalah Handi.</strong> Aku adalah Dev/pengembang AI/bot buatan yang siap membantu Anda kapan saja! Saat ini Saya sedang membangun website ini untuk <bold>Keperluan Store</bold>, dan Fika juga berkontribusi dalam prosesnya. Semoga website ini dapat membantu Anda mendapatkan layanan terbaik!</p>
+    </section>
+    
     <div class="menu-container">
         <div class="menu-item">
             <img src="logo.png" alt="Dashboard">
@@ -33,6 +44,63 @@
             <h3>Keluar</h3>
         </div>
     </div>
+
+    body {
+    font-family: Arial, sans-serif; 
+            text-align: center; 
+            background-color: #121212; 
+            color: white;
+        }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 800px;
+}
+
+.menu-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+}
 
     <script src="script.js"></script>
 </body>
