@@ -48,6 +48,7 @@
             <select id="game" class="form-select">
                 <option value="Free Fire">Handi</option>
                 <option value="Mobile Legends">Bot FikaAi</option>
+                <button onclick="orderWA()">Order via WhatsApp</button>
         <a href="https://wa.me/6287717274346?text=Halo,%20saya%20ingin%20top-up%20210%20DM%20untuk%20ID%201986193222" target="_blank">
     Order via WhatsApp
         </a>
@@ -173,7 +174,22 @@ h2 {
     background: rgba(255, 255, 255, 0.2);
 }
     </style>
-    <script>
+    <<script>
+function orderWA() {
+    let nomorWA = "6287717274346"; // Ganti dengan nomor WhatsApp kamu
+    let idGame = document.getElementById("idGame").value;
+    let pilihan = document.getElementById("pilihan").value;
+
+    if (idGame === "") {
+        alert("Masukkan ID Game dulu!");
+        return;
+    }
+
+    let pesan = `Halo, saya ingin top-up%0AID Game: ${idGame}%0APilihan: ${pilihan}`;
+    let urlWA = `https://wa.me/${nomorWA}?text=${pesan}`;
+
+    window.location.href = urlWA;
+}
         function hitungHarga() {
             let harga = document.getElementById("diamond").value;
             document.getElementById("totalHarga").innerText = "Rp " + harga;
